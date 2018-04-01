@@ -13,7 +13,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types:
     - Tested in version: 4.2 
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![unauthenticated stored xss](https://user-images.githubusercontent.com/18065015/38169116-084875f0-352f-11e8-9747-450b6a514fd5.gif)
   - [ ] Steps to recreate: Posted a comment with Javascript and made the comment longer than 64 KB. 
   - [ ] Affected source code: 
     - [Link 1](http://klikki.fi/adv/wordpress2.html)
