@@ -34,7 +34,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.5
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![authenticated shortcode tag xss](https://user-images.githubusercontent.com/18065015/38175750-5cdca156-35af-11e8-9708-ca70df846393.gif)
   - [ ] Steps to recreate: Create or edit a new post and insert the following into the text box: 
   ```
   Hello this is a test page [caption width="1" caption='<a href="' ">]<a href="http://onMouseOver='alert(100)'">Hello</a>
