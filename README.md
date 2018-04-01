@@ -9,24 +9,26 @@ Time spent: **X** hours spent in total
 ## Pentesting Report
 
 1. (Required) Unathenticated Stored XSS
-  - [ ] Summary: Performed a cross site scripting attack by injecting JavaScript into the comments on WP, which has a limit of 64 KB. When the admin views the comment, the script is triggered.
-    - Vulnerability types:
+  - [ ] Summary: 
+    - Vulnerability types: XSS
     - Tested in version: 4.2 
     - Fixed in version: 4.2.1
   - [ ] GIF Walkthrough: ![unauthenticated stored xss](https://user-images.githubusercontent.com/18065015/38169116-084875f0-352f-11e8-9747-450b6a514fd5.gif)
   - [ ] Steps to recreate: Posted the following comment in Javascript and made the comment longer than 64 KB:
-   ```<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>```
+   ```
+   <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
+   ```
   - [ ] Affected source code: 
     - [Link 1](http://klikki.fi/adv/wordpress2.html)
-1. (Required) Vulnerability Name or ID
+1. (Required) Authenticated XSS
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.0
+    - Fixed in version: 4.2.13
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate: Create or edit a post and post the following link into the text: `https://google.com<svg onload=alert("attack")>` 
   - [ ] Affected source code:
-    - [Link 1]()
+    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
