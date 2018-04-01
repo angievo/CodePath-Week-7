@@ -25,7 +25,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.0
     - Fixed in version: 4.2.13
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![authenticated xss](https://user-images.githubusercontent.com/18065015/38175615-62ef801a-35ad-11e8-8247-c62b87310c66.gif)
   - [ ] Steps to recreate: Create or edit a post and post the following link into the text: `https://google.com<svg onload=alert("attack")>` 
   - [ ] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
